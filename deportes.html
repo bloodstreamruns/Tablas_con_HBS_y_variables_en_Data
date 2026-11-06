@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking de Deportes</title>
+    <link rel="stylesheet" href="src/less/deportes.less" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Ranking de Deportes</h1>
+        <div class="tabla-scroll">
+            <table class="tabla-deportes">
+                <thead>
+                    <tr>
+                        <th>Deporte</th>
+                        <th>Descripción</th>
+                        <th>Requisitos</th>
+                        <th>Ranking</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each deportes}}
+                        {{>Fila}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@import "variables.less";
+@import "global.less";
+@import "utilities.less";
+@import "components/container.less";
+
+body {
+    background-color: @secondary-bg-color;
+    color: @secondary-text-color;
+}
+
+.tabla-scroll {
+    overflow-x: auto;
+}
+
+.tabla-deportes {
+    width: 100%;
+    border-collapse: collapse;
+    th,
+    td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border: 1px solid @primary-bg-color;
+    }
+    thead th {
+        background-color: @primary-bg-color;
+        color: @primary-text-color;
+    }
+    tbody tr:nth-child(even) {
+        background-color: lighten(@alternate-bg-color, 30%);
+    }
+    meter {
+        width: 6rem;
+        vertical-align: middle;
+    }
+}
