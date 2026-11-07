@@ -4,7 +4,7 @@ const deportes = {
             nombre: "Natación",
             descripcion: "Desplazamiento en el agua mediante estilos como crol, espalda, pecho y mariposa.",
             requisitos: "Traje de baño, gorro, gafas y acceso a una piscina.",
-            ranking: 5
+            ranking: 4
         },
         {
             nombre: "Fútbol",
